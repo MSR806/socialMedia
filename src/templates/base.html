@@ -9,15 +9,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!--Custom css ADD HERE-->
     
-    <!-- semantic UI -->
-    <link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 
   {% block styles %}
   {% endblock styles %}
     <title>msbook - {% block title %}{% endblock title %}</title>
   </head>
   <body>
+  <!--You can comment the below line when you wish-->
+    <h3>This is comming from base.html</h3>
     {% include 'main/navbar.html' %}
     {% block content %}
     {% endblock content %}
