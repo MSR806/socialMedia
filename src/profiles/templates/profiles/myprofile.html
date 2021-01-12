@@ -6,7 +6,11 @@ myprofile
 
 {% block content %}
 
-<!--Content here -->
+<form action= '', method = 'POST'>
+{% csrf_token %}
+{{form}}
+<button type= 'submit' class= 'ui positive button'>Update</button>
+</form>
     
 {% endblock content %}
 
